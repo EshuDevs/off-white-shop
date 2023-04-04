@@ -7,15 +7,16 @@ function Navbar() {
         <div>
             <img src={Logo} className=' w-1/4'/>
         </div>
-        <ul className='list-none flex gap-3 items-center text-brown font-kanit font-bold text-xl'>
-            <li>
-                SEARCH
+        <ul className='list-none align-middle flex gap-5 items-center text-brown font-kanit font-bold text-xl w-auto'>
+            <li className='relative'>
+                <input type='text' placeholder='Search' className='px-2 w-auto rounded-2xl'/>
+                <button className="material-symbols-outlined absolute top-0.5 right-2">search</button>
             </li>
             <li>
-                FAVORITES
+            <span className="material-symbols-outlined flex text-3xl">favorite</span>
             </li>
             <li>
-                CART
+            <span className="material-symbols-outlined flex text-3xl">shopping_bag</span>
             </li>
             <li>
                 
