@@ -1,12 +1,14 @@
-import React from 'react'
 import Navbar from './Navbar'
 import Jordan from '../images/jordan.webp'
 
+
+
 function Hero() {
+
   return (
     <div className=' bg-background text-brown'>
-        <Navbar/>
-        <div className='flex py-5 justify-evenly mt-5'>
+        
+        <div className='flex py-5 justify-evenly pt-5'>
             <div className='w-1/4 flex flex-col gap-4 mt-10'>
                 <p className=' font-barcode text-2xl'>OFF-WHITE X NIKE</p>
                 <h1 className=' font-kanit text-8xl font-extrabold italic'>UNITE IN STYLE</h1>

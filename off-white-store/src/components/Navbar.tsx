@@ -1,9 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 import  Logo  from '../images/logo.png'
+import Sidebar from './Sidebar'
 
-function Navbar() {
+interface SidebarProps {
+  open: boolean
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+function Navbar({open, setOpen}:SidebarProps) {
+
   return (
-    <nav className='justify-between w-full flex bg-transparent p-5'>
+    <div className='bg-background'>
+      <nav className='justify-between w-full flex bg-transparent p-5'>
         <div>
             <img src={Logo} className=' w-1/4'/>
         </div>
@@ -16,13 +24,11 @@ function Navbar() {
             <span className="material-symbols-outlined flex text-3xl">favorite</span>
             </li>
             <li>
-            <span className="material-symbols-outlined flex text-3xl">shopping_bag</span>
-            </li>
-            <li>
-                
+            <button onClick={() => setOpen(true)} className="material-symbols-outlined flex text-3xl cursor-pointer">shopping_bag</button>
             </li>
         </ul>
-    </nav>
+      </nav>
+    </div>
   )
 }
 
