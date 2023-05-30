@@ -17,7 +17,7 @@ function Navbar({open, setOpen}:SidebarProps) {
         </div>
         <ul className='list-none align-middle flex gap-5 items-center text-brown font-kanit font-bold text-xl w-auto'>
             <li className='relative'>
-                <input type='text' placeholder='Search' className='px-2 w-auto rounded-2xl'/>
+                <input type='text' placeholder='Search' className='px-2 w-[12rem] md:w-auto rounded-2xl'/>
                 <button className="material-symbols-outlined absolute top-0.5 right-2">search</button>
             </li>
             <li>

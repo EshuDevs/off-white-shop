@@ -4,14 +4,10 @@ import { Dialog, Transition } from '@headlessui/react'
 interface SidebarProps {
     open: boolean
     setOpen: React.Dispatch<React.SetStateAction<boolean>>
-
-    add: boolean
-    setAdd: React.Dispatch<React.SetStateAction<boolean>>
   }
-
-
-export default function Sidebar({open, setOpen ,add, setAdd}:SidebarProps) {
   
+
+export default function Sidebar({open, setOpen}:SidebarProps) {
 
   return (
     <Transition.Root show={open} as={Fragment}>
@@ -67,7 +63,7 @@ export default function Sidebar({open, setOpen ,add, setAdd}:SidebarProps) {
                         Cart
                       </Dialog.Title>
                     </div>
-                    <div className="relative mt-6 flex-1 px-4 sm:px-6">Hello World</div>
+                    <div className="relative mt-6 flex-1 px-4 sm:px-6">Hello</div>
                   </div>
                 </Dialog.Panel>
               </Transition.Child>
